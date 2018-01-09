@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'crumble';
+    src: url('dk_crayon_crumble-webfont.woff2') format('woff2'),
+    url('dk_crayon_crumble-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.horizontal {
+    width: 100%;
+}
+
+.vertical {
+    width: 100%;
+}
+
+.top {
+    margin-bottom: 50px;
+}
+
+.bottom {
+    margin-top: 50px;
+    padding-bottom: 125px;
+}
+
+.left {
+    position: relative;
+    right: 15%;
+    top: 85px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+
+.right {
+    position: relative;
+    left: 15%;
+    top: 40px;
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+
+#heading {
+    font-size: 140px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 560px;
+    color: #A7D5A8;
+}
+
+#gamediv {
+    width: 500px;
+    padding-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#gameboard {
+    position: absolute;
+    bottom: 28px;
+    left: 45px;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: 100%;
+    font-family: 'crumble';
+    color: #F1F2F4;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 130px;
+    width: 130px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 100px;
+    cursor: pointer;
+}
+
+#gamerow {
+    width: 1000px;
+    margin: auto;
+}
+
+.player1Marker, #player1 {
+    color: #76A9D8;
+}
+
+.player2Marker, #player2 {
+    color: #ED8A8A;
+}
+
+#player1Hover {
+    color: #c3d9ee;
+}
+
+#player2Hover {
+    color: #f5bdbd;
+}
+
+#player1 {
+    float: left;
+    margin-top: 0px;
+    font-size: 50px;
+}
+
+#player2 {
+    float: right;
+    font-size: 50px;
+    text-align: center;
+}
+
+.playerName {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.wins {
+    margin-top: 0px;
+}
+
+#catWins {
+    font-size: 40px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #F9D472;
+}

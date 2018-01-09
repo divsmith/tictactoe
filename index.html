@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
+</head>
+<body onload="initialize()">
+    <p id="heading">Tic Tac Toe</p>
+    <div id="gamerow">
+        <div id="player1">
+            <p class="playerName" id="player1Name"></p>
+            <p class="icon" id="player1Icon"></p>
+            <p class="wins" id="player1Wins">Wins: 0</p>
+        </div>
+
+        <div id="player2">
+            <p class="playerName" id="player2Name"></p>
+            <p class="icon" id="player2Icon"></p>
+            <p class="wins" id="player2Wins">Wins: 0</p>
+        </div>
+
+        <div id="gamediv">
+            <img class="vertical left" src="chalk-line.png" alt="chalk line">
+            <img class="vertical right" src="chalk-line.png" alt="chalk line">
+            <img class="horizontal top" src="chalk-line.png" alt="chalk line">
+            <img class="horizontal bottom" src="chalk-line.png" alt="chalk line">
+
+            <div id="gameboard">
+                <div class="row">
+                    <div class="cell" onclick="playerMoved(this, 1)" onmouseover="mouseOver(this)" onmouseout="mouseOff(this)"></div>
+                    <div class="cell" onclick="playerMoved(this, 2)" onmouseover="mouseOver(this)" onmouseout="mouseOff(this)"></div>
+                    <div class="cell" onclick="playerMoved(this, 4)" onmouseover="mouseOver(this)" onmouseout="mouseOff(this)"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" onclick="playerMoved(this, 8)" onmouseover="mouseOver(this)" onmouseout="mouseOff(this)"></div>
+                    <div class="cell" onclick="playerMoved(this, 16)" onmouseover="mouseOver(this)" onmouseout="mouseOff(this)"></div>
+                    <div class="cell" onclick="playerMoved(this, 32)" onmouseover="mouseOver(this)" onmouseout="mouseOff(this)"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" onclick="playerMoved(this, 64)" onmouseover="mouseOver(this)" onmouseout="mouseOff(this)"></div>
+                    <div class="cell" onclick="playerMoved(this, 128)" onmouseover="mouseOver(this)" onmouseout="mouseOff(this)"></div>
+                    <div class="cell" onclick="playerMoved(this, 256)" onmouseover="mouseOver(this)" onmouseout="mouseOff(this)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="catWins">Cat Wins: 0</div>
+</body>
+</html>
